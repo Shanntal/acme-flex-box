@@ -1,0 +1,174 @@
+
+header {
+    display: flex;
+    background-color: dodgerblue;
+    color: white;
+    justify-content: center;
+    font-size: 15px;
+    width: 100vw;
+    font-family: verdana;
+}
+
+header #navBar {
+    margin: 1rem;
+    font-size: 20px;
+    width: 50vw
+}
+
+nav {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    width: 100vw;
+}
+
+.nav-item a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+h1 {
+    font-family: Verdana;
+    color: dimgray;
+}
+
+.create {
+    display: flex;
+    border: solid 2px;
+    border-color: black;
+    width: 50%;
+    border-radius: 5px;
+    height: 16em;
+    flex-direction: column;
+    font-family: verdana;
+    color: dimgray;
+    padding-top: 0%;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+}
+
+input {
+    width: 81%;
+}
+
+select {
+    width: 79%;
+}
+
+#saveButton {
+    border-radius: 0px;
+}
+
+#clearButton {
+    border-radius: 0px;
+}
+
+#saveButton:hover {
+    background-color: dodgerblue;
+    border: solid 1px;
+}
+
+#clearButton:hover {
+    border: solid 1px;
+}
+
+/*
+span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px;
+}
+
+*/
+
+.parent{
+    display: flex;
+    /*flex-direction: column;*/
+    justify-content: center;
+    width: 100%;
+}
+
+
+
+#usersSaved {
+    width: 100vw;
+}
+
+
+
+#usersSaved > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user {
+    display: flex;
+    padding: 1.2rem;
+    margin: 1rem;
+    width: calc(100%/3 - 5rem);
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: solid 2px;
+    border-color: black;
+    border-radius: 15px;
+    color:dimgray;
+    font-family: verdana;
+}
+
+
+@media (max-width: 600px) {
+    .user {
+      width: 100%;
+    }
+    
+    header {
+      flex-direction: column;
+    }
+  
+
+    nav {
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      padding: 5px;
+      /* align-content: space-between; */
+      /* border: solid 1px; */
+    }
+
+    .create {
+        height: 22em;
+        width: 100%;   
+    }
+
+    button {
+        display: block;
+        width: 100%;
+        border: none;
+        background-color: white;
+    }
+
+    #navBar {
+        width: 20%;
+       /* border: solid 1px; */
+        padding: 1px;
+    }
+
+    /*
+    #navBar > p {
+        font-size: 25px;
+    }
+    */
+    input {
+       border: none;
+    }
+    
+    select {
+        border: none;
+        -webkit-appearance: none;
+    }
+  }
